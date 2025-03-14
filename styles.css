@@ -1,0 +1,226 @@
+body {
+    background-color: #ac4c85; /* Darker shade derived from #efebe0 */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #eed4ff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    overflow: hidden; /* Hide overflow */
+    z-index: 9999; /* Ensure it is on top */
+}
+
+.emoji {
+    position: absolute;
+    top: -10px; /* Start above the viewport */
+    font-size: 24px; /* Size of the emoji */
+    opacity: 0.8; /* Slight transparency */
+    animation: fall linear infinite; /* Animation for falling */
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Move to the bottom of the viewport */
+    }
+}
+.container {
+    padding: 50px;
+}
+
+.title {
+    font-size: 3em;
+    color: #770737; /* Pink for the title */
+    margin-bottom: 20px;
+}
+
+.birthday-image {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.message {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #770737; /* Hot Pink for the message */
+}
+
+.countdown {
+    margin: 30px 0;
+}
+
+.timer {
+    font-size: 2em;
+    color: #770737; /* Pink for the timer */
+}
+.timer1 {
+    font-size: 2em;
+    color: #770737; /* Pink for the timer */
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #d48ddb; /* Hot Pink for the button */
+    color: #efebe0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #770737; /* Fuchsia on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#loveLetter {
+    background-color: #f9f3f3; /* Light background for the letter */
+    color: #770737; /* Dark pink text color */
+    border: 2px solid #d48ddb; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the letter */
+    max-width: 600px; /* Maximum width */
+    margin: 20px auto; /* Center the letter */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Start slightly above */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+#loveLetter.active {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+.surprise-message {
+    font-size: 1.5em;
+    color: #eed4ff; /* Pink for surprise message */
+    margin-top: 20px;
+}
+
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: 15px auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(170, 166, 166, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #414040;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.heartfelt-message {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: #eed4ff; /* Light text for heartfelt message */
+}
+.heartfelt-message h2{
+    color: #770737; /* Pink for the title */
+}
+iframe{
+    margin: 10px;
+}
+#loveLetter1 {
+    background-color: #f9f3f3; /* Light background for the letter */
+    color: #770737; /* Dark pink text color */
+    border: 2px solid #d48ddb; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the letter */
+    max-width: 600px; /* Maximum width */
+    margin: 20px auto; /* Center the letter */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    opacity: 1; /* Start hidden */
+    transform: translateY(-20px); /* Start slightly above */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
